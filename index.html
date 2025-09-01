@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renuka C – Digital Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Renuka C</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#essay">Essay Writing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="home-container">
+      <h1>Hello, I'm Renuka C</h1>
+      <h2 id="typing"></h2>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="profile-container">
+        <label for="file-upload" class="profile-label">
+          <span class="glyphicon glyphicon-camera"></span> Change Image
+        </label>
+        <input type="file" id="file-upload" accept="image/*" onchange="previewImage(event)">
+        <img id="profile-preview" src="images/profile.jpg" alt="Profile Photo">
+      </div>
+      <p>I am a BCA student, Web Developer, Tech Enthusiast, and passionate about Essay Writing.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+     <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:crenugashamina@gmail.com">crenugashamina@gmail.com</a></p>
+    <p>Phone: <a href="tel:+918248523662">+91 82485 23662</a></p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+      
+

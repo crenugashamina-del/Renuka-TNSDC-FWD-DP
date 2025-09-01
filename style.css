@@ -1,0 +1,120 @@
+/* Reset & Basics */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background: #e8f5e9; /* Light green */
+  color: #0b3d0b;      /* Deep green text */
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  background: rgba(183, 232, 193, 0.9);
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+nav h2 { color: #0b3d0b; }
+nav ul { display: flex; list-style: none; }
+nav ul li { margin: 0 10px; }
+nav ul li a {
+  color: #0b3d0b;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover { color: #66bb6a; }
+
+/* Section Styles */
+section {
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+section h2 {
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+/* Home Section */
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#home h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #1b5e20;
+}
+
+/* About Section */
+.about-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+.profile-container {
+  text-align: center;
+  position: relative;
+}
+.profile-label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#file-upload {
+  display: none;
+}
+#profile-preview {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  object-fit: cover;
+}
+.about-content img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #2e7d32;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+.skill-card {
+  background: #a5d6a7;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Contact Section */
+#contact a {
+  color: #1b5e20;
+  text-decoration: underline;
+}
+form {
+  display: flex;
+  flex-direction: column
+::contentReference[oaicite:0]{index=0}
+ 
+
